@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка на Moderator Discord 04</title>
+      <link rel="icon" href="https://i.imgur.com/fQLBeQ9.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.imgur.com/IRBx2GY.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+            color: #4CAF50;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: #FFD700;
+        }
+
+        .criteria {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .question {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        label i {
+            margin-right: 10px;
+            color: #FFD700;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 1em;
+            margin-bottom: 15px;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            background: rgba(51, 51, 51, 0.9);
+            color: #fff;
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        .checkbox-group {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            margin-left: 12px;
+            font-weight: 400;
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            accent-color: #4CAF50;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            cursor: pointer;
+            margin: 10px 5px;
+            width: 45%;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.2s;
+            align-self: center;
+        }
+
+        button:hover {
+            background: #45a049;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            button {
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Заявка на Moderator Discord 04</h1>
+        <h2>Критерії:</h2>
+        <div class="criteria">
+            <ul>
+                <li>16+ (можливі виключення до 15 років);</li>
+                <li>Досвід і знання функціоналу ігрового моду UKRAINE GTA.</li>
+                <li>Знання правил Discord серверу UKRAINE GTA.</li>
+                <li>Вміння працювати і кооперуватись в команді;</li>
+                <li>Клієнтоорієнтованість (комунікабельний, стриманий, скрупульозний);</li>
+                <li>Наявність мікрофону;</li>
+                <li>Мати мінімальні знання по функціоналу Discord.</li>
+            </ul>
+        </div>
+        <form id="applicationForm">
+            <div class="question">
+                <label for="email"><i class="fas fa-envelope"></i> Електронна адреса:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="question">
+                <label for="fullName"><i class="fas fa-user"></i> Ваше прізвище, ім'я, по-батькові:</label>
+                <input type="text" id="fullName" required>
+            </div>
+            <div class="question">
+                <label for="age"><i class="fas fa-calendar-alt"></i> Ваш вік:</label>
+                <input type="text" id="age" placeholder="Наприклад: 16" required>
+            </div>
+            <div class="question">
+                <label for="traits"><i class="fas fa-comments"></i> Назвіть позитивні 3 та 3 негативні риси Вашого характеру:</label>
+                <textarea id="traits" rows="4" required></textarea>
+            </div>
+            <div class="question">
+                <label for="telegram"><i class="fas fa-paper-plane"></i> Ваш Telegram:</label>
+                <input type="text" id="telegram" required>
+            </div>
+            <div class="question">
+                <label for="discord"><i class="fab fa-discord"></i> Ваш Discord:</label>
+                <input type="text" id="discord" required>
+            </div>
+            <div class="question">
+                <label for="server"><i class="fas fa-server"></i> З якого Discord сервера Ви подаєте заявку на посаду технічної підтримки?</label>
+                <select id="server" required>
+                    <option value="" disabled selected>Оберіть сервер</option>
+                    <option value="Сервер 1">Сервер 1</option>
+                    <option value="Сервер 2">Сервер 2</option>
+                    <option value="Сервер 3">Сервер 3</option>
+                    <option value="Сервер 4">Сервер 4</option>
+                    <option value="Сервер 5">Сервер 5</option>
+                    <option value="Сервер 6">Сервер 6</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="teamPlayer"><i class="fas fa-users"></i> Чи вважаєте ви себе командним гравцем?</label>
+                <textarea id="teamPlayer" rows="4" required></textarea>
+            </div>
+            <div class="question">
+                <label for="adequacy"><i class="fas fa-check-circle"></i> Наскільки ви оціните свою адекватність?</label>
+                <input type="range" id="adequacy" min="1" max="10" required>
+            </div>
+            <div class="question">
+                <label for="stressResistance"><i class="fas fa-thermometer-half"></i> Наскільки ви оціните свою стресостійкість?</label>
+                <input type="range" id="stressResistance" min="1" max="10" required>
+            </div>
+            <div class="question">
+                <label for="learningSpeed"><i class="fas fa-clock"></i> Наскільки швидко ви запам'ятовуєте/ознайомлюєтеся з новим матеріалом який вам надають?</label>
+                <input type="range" id="learningSpeed" min="1" max="10" required>
+            </div>
+            <div class="question">
+                <label><i class="fas fa-user-shield"></i> Чи займали раніше посаду Moderator Discord? (Чи якусь схожу посаду)</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="moderatorYes" name="moderatorExperience" value="Так"> Так</label>
+                    <label><input type="checkbox" id="moderatorNo" name="moderatorExperience" value="Ні"> Ні</label>
+                </div>
+            </div>
+            <div class="question">
+                <label><i class="fas fa-ban"></i> Чи були у Вас бани на Discord серверах Ukraine GTA? Якщо так, то за що саме?</label>
+                <textarea id="bans" rows="4"></textarea>
+            </div>
+            <div class="question">
+                <label><i class="fas fa-thumbs-up"></i> Готові отримати ЧС - Moderator DS якщо не пройдете стажування протягом 10 днів?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="readyYes" name="readyForCS" value="Так"> Так</label>
+                    <label><input type="checkbox" id="readyNo" name="readyForCS" value="Ні"> Ні</label>
+                </div>
+            </div>
+            <div class="question">
+                <label><i class="fas fa-exclamation-triangle"></i> Як би ви відреагували, якщо інший модератор неправильно поводиться або зловживає своїми повноваженнями?</label>
+                <textarea id="moderatorReaction" rows="4" required></textarea>
+            </div>
+            <div class="question">
+                <label><i class="fas fa-user-times"></i> Як ви відреагуєте, якщо учасник серверу висловлюється негативно щодо вас або вашої роботи?</label>
+                <textarea id="negativeFeedback" rows="4" required></textarea>
+            </div>
+            <div class="question">
+                <label><i class="fas fa-user-friends"></i> Уявіть ситуацію: користувач порушує правила, але є вашим знайомим або другом. Як ви вчините?</label>
+                <textarea id="friendViolation" rows="4" required></textarea>
+            </div>
+            <div class="question">
+                <label><i class="fas fa-exclamation-circle"></i> Уявіть, що ви помилилися в рішенні під час модерації і це викликало негативну реакцію від учасників. Як ви виправите ситуацію?</label>
+                <textarea id="mistakeResponse" rows="4" required></textarea>
+            </div>
+            <div class="question">
+                <label><i class="fas fa-bullhorn"></i> Ситуація: На сервері починається спам з рекламою сторонніх ресурсів. Які ваші дії для припинення цього явища?</label>
+                <textarea id="spamResponse" rows="4" required></textarea>
+            </div>
+            <div class="question">
+                <label><i class="fas fa-syringe"></i> Ситуація: Один з членів клану починає обговорювати наркотичні речовини, що суперечить P.24. Як ви будете реагувати?</label>
+                <textarea id="drugsResponse" rows="4" required></textarea>
+            </div>
+            <div class="question">
+                <label for="fishing"><i class="fas fa-fish"></i> Що потрібно, щоб почати рибалити? Як закинути вудку?</label>
+                <textarea id="fishing" rows="4" required></textarea>
+            </div>
+            <div class="question">
+                <label for="adminQuestion"><i class="fas fa-user-cog"></i> Гравець задає запитання: Як стати адміністратором? Ваша відповідь:</label>
+                <textarea id="adminQuestion" rows="4" required></textarea>
+            </div>
+            <div class="question">
+                <label for="bloggerQuestion"><i class="fas fa-video"></i> Як стати блогером Ukraine GTA?</label>
+                <textarea id="bloggerQuestion" rows="4" required></textarea>
+            </div>
+            <div class="question">
+                <label><i class="fas fa-microphone"></i> Чи маєте ви мікрофон для виконання щоденної норми на посаді Moderator Discord в голосовому каналі?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="hasMicrophoneYes" name="microphone" value="Так"> Так, маю мікрофон</label>
+                    <label><input type="checkbox" id="hasMicrophoneNo" name="microphone" value="Ні"> Ні, не маю мікрофону</label>
+                </div>
+            </div>
+            <div class="question">
+                <label><i class="fas fa-clock"></i> Скільки годин можете приділяти посаді M.D?</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="oneHour" name="hours" value="Не більше однієї години на день."> Не більше однієї години на день.</label>
+                    <label><input type="checkbox" id="twoHours" name="hours" value="Дві години на день."> Дві години на день.</label>
+                    <label><input type="checkbox" id="threeToFourHours" name="hours" value="Від 3-х до 4-х годин на день."> Від 3-х до 4-х годин на день.</label>
+                    <label><input type="checkbox" id="fivePlusHours" name="hours" value="5+ годин на день."> 5+ годин на день.</label>
+                </div>
+            </div>
+            <div class="options">
+                <button type="submit">Відправити заявку</button>
+                <button type="reset">Очистити форму</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('applicationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Збираємо дані з форми
+            const email = document.getElementById('email').value;
+            const fullName = document.getElementById('fullName').value;
+            const age = document.getElementById('age').value;
+            const traits = document.getElementById('traits').value;
+            const telegram = document.getElementById('telegram').value;
+            const discord = document.getElementById('discord').value;
+            const server = document.getElementById('server').value;
+            const teamPlayer = document.getElementById('teamPlayer').value;
+            const adequacy = document.getElementById('adequacy').value;
+            const stressResistance = document.getElementById('stressResistance').value;
+            const learningSpeed = document.getElementById('learningSpeed').value;
+            const moderatorExperience = document.querySelector('input[name="moderatorExperience"]:checked')?.value || 'Не вказано';
+            const bans = document.getElementById('bans').value;
+            const readyForCS = document.querySelector('input[name="readyForCS"]:checked')?.value || 'Не вказано';
+            const moderatorReaction = document.getElementById('moderatorReaction').value;
+            const negativeFeedback = document.getElementById('negativeFeedback').value;
+            const friendViolation = document.getElementById('friendViolation').value;
+            const mistakeResponse = document.getElementById('mistakeResponse').value;
+            const spamResponse = document.getElementById('spamResponse').value;
+            const drugsResponse = document.getElementById('drugsResponse').value;
+            const fishing = document.getElementById('fishing').value;
+            const adminQuestion = document.getElementById('adminQuestion').value;
+            const bloggerQuestion = document.getElementById('bloggerQuestion').value;
+            const microphone = document.querySelector('input[name="microphone"]:checked')?.value || 'Не вказано';
+            const hours = Array.from(document.querySelectorAll('input[name="hours"]:checked')).map(checkbox => checkbox.value).join(', ') || 'Не вказано';
+
+            // Форматування повідомлення
+            const message = {
+                username: "UKRAINE GTA | АРХІВ",
+                avatar_url: "https://i.imgur.com/n8Rt4HO.png", // URL вашого аватара
+                embeds: [{
+                    title: "Нова заявка на модератора",
+                    description: "Дані заявки:",
+                    fields: [
+                        { name: "Електронна адреса", value: email, inline: false },
+                        { name: "Ваше прізвище, ім'я, по-батькові", value: fullName, inline: false },
+                        { name: "Ваш вік", value: age, inline: false },
+                        { name: "Позитивні та негативні риси", value: traits, inline: false },
+                        { name: "Ваш Telegram", value: telegram, inline: false },
+                        { name: "Ваш Discord", value: discord, inline: false },
+                        { name: "Сервер", value: server, inline: false },
+                        { name: "Командний гравець?", value: teamPlayer, inline: false },
+                        { name: "Адекватність (1-10)", value: adequacy, inline: false },
+                        { name: "Стресостійкість (1-10)", value: stressResistance, inline: false },
+                        { name: "Швидкість навчання (1-10)", value: learningSpeed, inline: false },
+                        { name: "Досвід модератора", value: moderatorExperience, inline: false },
+                        { name: "Бани на серверах", value: bans, inline: false },
+                        { name: "Готовність до ЧС", value: readyForCS, inline: false },
+                        { name: "Реакція на неправомірні дії модератора", value: moderatorReaction, inline: false },
+                        { name: "Реакція на негативний відгук", value: negativeFeedback, inline: false },
+                        { name: "Реакція на порушення друга", value: friendViolation, inline: false },
+                        { name: "Виправлення помилки модерації", value: mistakeResponse, inline: false },
+                        { name: "Дії при спамі", value: spamResponse, inline: false },
+                        { name: "Реакція на обговорення наркотиків", value: drugsResponse, inline: false },
+                        { name: "Вимоги до рибалки", value: fishing, inline: false },
+                        { name: "Відповідь на питання адміністратора", value: adminQuestion, inline: false },
+                        { name: "Як стати блогером?", value: bloggerQuestion, inline: false },
+                        { name: "Мікрофон", value: microphone, inline: false },
+                        { name: "Години на день", value: hours, inline: false }
+                    ]
+                }]
+            };
+
+            // Відправка даних на вебхук Discord
+            fetch('https://discord.com/api/webhooks/1296908556561416294/HmtvN__ZOoTgIPKNI6mqgKxAfJvjFIDez1QpAJB6-vSXzHZPC3F2nkRXrYF3n1wDtfC9', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(message)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Заявка надіслана успішно!');
+                    document.getElementById('applicationForm').reset(); // Очищення форми після відправки
+                } else {
+                    alert('Виникла помилка при відправці заявки.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Виникла помилка при відправці заявки.');
+            });
+        });
+    </script>
+</body>
+</html>
